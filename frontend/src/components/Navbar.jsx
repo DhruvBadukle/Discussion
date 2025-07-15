@@ -14,8 +14,7 @@ function Navbar() {
   return (
     <nav className="bg-white border-b border-gray-200 px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between h-16 items-center">
-        {/* Logo/Brand */}
-        <div className="flex items-center">
+         <div className="flex items-center">
           <Link 
             to="/" 
             className="flex items-center space-x-2"
@@ -25,8 +24,7 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Navigation Links - Center aligned */}
-        {isAuthenticated && (
+         {isAuthenticated && (
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/create" 
@@ -52,8 +50,7 @@ function Navbar() {
           </div>
         )}
 
-        {/* Right side actions */}
-        <div className="flex items-center space-x-4">
+         <div className="flex items-center space-x-4">
           {isAuthenticated ? (
             <>
               <button
@@ -83,8 +80,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile navigation */}
-      {isAuthenticated && (
+       {isAuthenticated && (
         <div className="md:hidden flex justify-around py-2 border-t border-gray-200">
           <Link 
             to="/create" 
