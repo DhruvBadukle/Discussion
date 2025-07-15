@@ -15,7 +15,7 @@ function Signup() {
     e.preventDefault();
     setError('');
     
-    // Client-side validation
+     
     if (!email || !password || !confirmPassword) {
       setError('Please fill in all fields');
       return;
@@ -38,10 +38,10 @@ function Signup() {
         email, 
         password 
       }, {
-        timeout: 5000 // 5 seconds timeout
+        timeout: 5000  
       });
       
-      // Show success message and redirect after a brief delay
+     
       setTimeout(() => {
         navigate('/');
       }, 1500);
