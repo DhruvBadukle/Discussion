@@ -24,8 +24,7 @@ const Home = () => {
     }
 
     if (isEditing !== null) {
-      // Update existing post
-      setPosts(posts.map(post => 
+       setPosts(posts.map(post => 
         post.id === isEditing ? { ...post, question, description } : post
       ));
       setIsEditing(null);
@@ -65,8 +64,7 @@ const Home = () => {
       <Navbar />
       
       <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        {/* Create Post Card */}
-        <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8">
+         <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8">
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
               <FiPlus className="mr-2" />
@@ -144,8 +142,7 @@ const Home = () => {
           </div>
         </div>
         
-        {/* Posts List */}
-        <div className="space-y-6">
+         <div className="space-y-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Recent Posts</h2>
           
           {posts.length === 0 ? (
